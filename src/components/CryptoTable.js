@@ -22,13 +22,27 @@ const CryptoTable = () => {
 
   return (
     <div className="table-container">
+      <form
+       onSubmit={(e) => {
+       e.preventDefault(); // Prevents page reload
+      }}
+      style={{ marginBottom: '16px' }}
+      >
       <input
-        type="text"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search by name or symbol..."
-        style={{ marginBottom: '12px', padding: '8px 12px', width: '100%', maxWidth: '400px', border: '1px solid #ccc', borderRadius: '4px' }}
+      type="text"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      placeholder="Search by name or symbol..."
+      style={{
+      padding: '8px 12px',
+      width: '100%',
+      maxWidth: '400px',
+      border: '1px solid #ccc',
+      borderRadius: '4px',
+      }}
       />
+      </form>
+
 
       <button
         onClick={() => setShowFavoritesOnly((prev) => !prev)}

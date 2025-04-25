@@ -25,14 +25,16 @@ To run the project, you'll need to set up a basic React project first using the 
 
 ```
 src/
-├── App.js                    # Main app entry point
-├── CryptoTable.js            # Table UI with crypto data
-├── CryptoUpdater.js          # Simulates live price updates
-├── CryptoTable.css           # Styling for the table
-├── store/
-│   ├── store.js              # Redux store configuration
-│   └── cryptoSlice.js        # Redux slice with state and reducers
-└── sampleData.js             # Sample mock data for crypto assets
+├── app/                 
+│   ├── store.js            
+├── components/
+│   ├── cryptoTable.js           
+│   └── cryptoTable.css      
+├── features   
+│   └── cryptoSlice.js
+│   └── mockSocket.js
+│   └── sampleData.js   
+├── App.js
 ```
 
 ---

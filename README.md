@@ -1,25 +1,29 @@
-📊 Crypto Currency Tracker
-A dynamic cryptocurrency tracker built with React and Redux Toolkit, simulating real-time price updates and displaying key market stats like price, market cap, volume, and 7-day trends.
+# 📊 Crypto Currency Tracker
 
-📁 Folder Info
-⚠️ Note: Only the src folder is uploaded.
+A dynamic cryptocurrency tracker built with **React** and **Redux Toolkit**, simulating real-time price updates and displaying key market stats like price, market cap, volume, and 7-day trends.
+
+---
+
+## 📁 Folder Info
+
+⚠️ **Note**: Only the `src` folder is uploaded.  
 To run the project, you'll need to set up a basic React project first using the instructions below.
 
-🧱 Tech Stack
-React (UI)
+---
 
-Redux Toolkit (state management)
+## 🧱 Tech Stack
 
-React-Redux (Redux bindings)
+- **React** (UI)
+- **Redux Toolkit** (state management)
+- **React-Redux** (Redux bindings)
+- **CSS** (styling)
+- **Mock data simulation** using `setInterval()`
 
-CSS (styling)
+---
 
-Mock data simulation using setInterval()
+## 🧠 Project Architecture
 
-🧠 Project Architecture
-bash
-Copy
-Edit
+```
 src/
 ├── App.js                    # Main app entry point
 ├── CryptoTable.js            # Table UI with crypto data
@@ -29,50 +33,44 @@ src/
 │   ├── store.js              # Redux store configuration
 │   └── cryptoSlice.js        # Redux slice with state and reducers
 └── sampleData.js             # Sample mock data for crypto assets
-⚙️ Setup Instructions
-Since you only pushed the src folder, follow these steps to get your project running:
+```
 
-Create a New React App
+---
 
-bash
-Copy
-Edit
+## ⚙️ Setup Instructions
+
+Since you only pushed the `src` folder, follow these steps to get your project running:
+
+1. **Create a New React App**
+```bash
 npx create-react-app crypto-tracker
 cd crypto-tracker
-Install Required Dependencies
+```
 
-bash
-Copy
-Edit
+2. **Install Required Dependencies**
+```bash
 npm install @reduxjs/toolkit react-redux
-Replace the src/ Folder
+```
 
-Delete the existing src/ folder in your React app.
+3. **Replace the `src/` Folder**
 
-Copy your uploaded src/ folder into the project.
+- Delete the existing `src/` folder in your React app.
+- Copy your uploaded `src/` folder into the project.
 
-Run the App
-
-bash
-Copy
-Edit
+4. **Run the App**
+```bash
 npm start
-You should see your Crypto Price Tracker running at http://localhost:3000
+```
 
-🚀 Features
-Price updates every 1.5 seconds
+You should see your Crypto Price Tracker running at `http://localhost:3000`
 
-Color-coded percentage changes with arrows
+---
 
-Market cap, volume, and circulating supply shown
+## 🚀 Features
 
-7-day performance mini chart
+- Price updates every 1.5 seconds
+- Color-coded percentage changes with arrows
+- Market cap, volume, and circulating supply shown
+- 7-day performance mini chart
 
-📌 Future Enhancements
-Connect to real APIs like CoinGecko or CoinMarketCap
-
-Add search and filter functionality
-
-Add user favorites and persistent storage
-
-Make UI mobile responsive
+---

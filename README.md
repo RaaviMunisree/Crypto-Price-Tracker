@@ -5,9 +5,8 @@ A dynamic cryptocurrency tracker built with **React** and **Redux Toolkit**, sim
 ---
 
 ## 📁 Folder Info
-
-⚠️ **Note**: Only the `src` folder is uploaded.  
-To run the project, you'll need to set up a basic React project first using the instructions below.
+ 
+To run the project, set up a basic React project first using the instructions below.
 
 ---
 
@@ -33,15 +32,22 @@ src/
 ├── features   
 │   └── cryptoSlice.js
 │   └── mockSocket.js
-│   └── sampleData.js   
+│   └── sampleData.js
+├── CryptoUpdater.js   
 ├── App.js
+├── App.css
+├── index.js
+├── index.css
+├── App.test.js
+├── setupTests.js
+├── .gitignore
 ```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-Since you only pushed the `src` folder, follow these steps to get your project running:
+Follow these steps to get your project running:
 
 1. **Create a New React App**
 ```bash
@@ -55,16 +61,16 @@ npm install @reduxjs/toolkit react-redux
 ```
 
 3. **Replace the `src/` Folder**
+- Delete `src/` folder into the project.
+- Copy uploaded `src/` folder into the project.
 
-- Delete the existing `src/` folder in your React app.
-- Copy your uploaded `src/` folder into the project.
 
 4. **Run the App**
 ```bash
 npm start
 ```
 
-You should see your Crypto Price Tracker running at `http://localhost:3000`
+Crypto Price Tracker running at `http://localhost:3000`
 
 ---
 
